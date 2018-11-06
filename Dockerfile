@@ -1,5 +1,4 @@
 FROM jedisct1/alpine-runit:latest
-MAINTAINER Frank Denis
 ENV SERIAL 1
 
 ENV BUILD_DEPS   make gcc musl-dev git libevent-dev expat-dev shadow autoconf file libressl-dev
