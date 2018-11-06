@@ -60,8 +60,8 @@ prune
 
 exec /opt/dnscrypt-wrapper/sbin/dnscrypt-wrapper \
     --user=_dnscrypt-wrapper \
-    --listen-address=[::]:443 \
-    --resolver-address=127.0.0.1:553 \
+    --listen-address=[::]:26533 \
+    --resolver-address=8.8.8.8:53 \
     --provider-name="$provider_name" \
     --provider-cert-file="$(stcerts_files)" \
     --crypt-secretkey-file=$(stkeys_files) \
